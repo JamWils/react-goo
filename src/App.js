@@ -1,7 +1,5 @@
-import React from "react/addons";
-import {Spring} from "react-motion";
-
-
+import React from 'react/addons';
+import {Spring} from 'react-motion';
 
 let GooFilter = React.createClass({
     render() {
@@ -28,7 +26,7 @@ let SVGElements = React.createClass({
     render() {
         let cx = 50;
         let cy = 50;
-        let fillColor = "red";
+        let fillColor = "blue";
         let subRadius = 20;
         let config = [320, 12];
 
@@ -60,8 +58,9 @@ let SVGElements = React.createClass({
     }
 });
 
-let Demo = React.createClass({
+export default class App extends React.Component {
   render() {
+    console.log("Hello");
     return (
       <div>
         <SVGElements />
@@ -69,6 +68,4 @@ let Demo = React.createClass({
       </div>
     );
   }
-});
-
-React.render(<Demo />, document.body);
+}

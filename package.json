@@ -1,14 +1,15 @@
 {
-  "name": "react-webpack-template",
-  "version": "0.0.0",
+  "name": "react-goo",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --progress --colors --watch",
+    "lint": "eslint src",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "dependencies": {
     "envify": "^1.2.0",
     "react": "^0.13.3",
@@ -17,6 +18,8 @@
   "devDependencies": {
     "babel-loader": "^5.3.2",
     "jsx-loader": "^0.12.2",
-    "webpack": "^1.4.13"
+    "react-hot-loader": "^1.2.8",
+    "webpack": "^1.4.13",
+    "webpack-dev-server": "^1.10.1"
   }
 }
